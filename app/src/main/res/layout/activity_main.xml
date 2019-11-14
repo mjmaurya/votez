@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_page"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:id="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="104dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@android:drawable/ic_lock_lock" />
+
+        <EditText
+            android:id="@+id/signInEmail"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColor="#fff"
+            android:hint="@string/user_email"
+            android:textColorHint="#fff"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#fff"
+            android:inputType="textPassword"
+            android:textColorHint="#fff"
+            android:hint="@string/password"/>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:text="@string/sign_in_button" />
+            <TextView
+                android:id="@+id/forget"
+                android:textColor="#e6005c"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ForgetFrag"
+                android:text="@string/forget_password"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="--- OR ---"
+            android:textColor="#ffffff"
+            android:textSize="25dp"/>
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="CREATE ACCOUNT"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:onClick="SignUpFrag"
+            android:background="@drawable/heade_gradient"/>
+        <TextView
+            android:id="@+id/skip"
+            android:layout_width="280dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:text="Skip>>>"
+            android:onClick="mainFrag"
+            android:textColor="#25ff77"
+            android:textAlignment="center"/>
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/signUp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="104dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@android:drawable/star_big_on" />
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#fff"
+        android:hint="@string/user_email"/>
+
+    <EditText
+        android:id="@+id/password_sign_up"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColorHint="#fff"/>
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:textColor="#ffffff"
+        android:text="@string/sign_up_button" />
+    <TextView
+        android:id="@+id/registered"
+        android:layout_width="280dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/have_an_account"
+        android:onClick="signInFrag"
+        android:textColor="#ff25ff"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/skips"
+        android:layout_width="280dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:onClick="mainFrag"
+        android:textColor="#25ff77"
+        android:textAlignment="center"/>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/forget_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="104dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <EditText
+            android:id="@+id/forget_email"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/user_email"
+            android:textColorHint="#fff"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/forgetBtn"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:text="Next" />
+
+        <TextView
+            android:id="@+id/back_to_logIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/back_to_log_in"
+            android:textColor="#002db3"
+            android:onClick="signInFrag"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

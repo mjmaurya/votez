@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">votez</string>
+    <string name="sign_in_button">SIGN IN</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="new_user">New User</string>
+    <string name="user_email">Email</string>
+    <string name="have_an_account">Have an Account</string>
+    <string name="sign_up_button">SIGN UP</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="back_to_log_in">Back to Log In</string>
+    <string name="skip"><![CDATA[Skip>>>]]></string>
+    <string name="contest_id">Contest Id</string>
+    <string name="contest_name">Contest Name</string>
+    <string name="contest_type">Contest Type</string>
+</resources>
